@@ -8,6 +8,7 @@
     <script src="../dist/browser-detect.umd.js"></script>
     <script>
         var browser = browserDetect();
+        browser.userAgent = window.navigator.userAgent;
         console.log(browser);
         window.addEventListener('load', function () {
             var pre = document.createElement('pre');
